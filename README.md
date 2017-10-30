@@ -1,4 +1,4 @@
-# display {nice}
+# {display: nice}
 ## CSS Utility Class Mashup
 
 Taking the parts I liked most in [Tachyons](http://tachyons.io/), [Shed CSS](http://tedconf.github.io/shed-css/) and [Beard](http://buildwithbeard.com/) and mashing up my own set of utility classes.
