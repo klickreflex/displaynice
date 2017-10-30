@@ -18,9 +18,30 @@ $breakpoints: (
     'xl': 1200px   // 75em
 ) !default;
 
+
 // Breakpoints used for utility class generation
 $utility-breakpoints: (
     'sm': 480px,   // 30em
     'md': 768px,   // 48em
     'lg': 1024px,  // 64em
 ) !default;
+
+
+// Type Scale
+$f-headline: 6rem !default;
+$f-subheadline: 5rem !default;
+$f1: 3rem !default;
+$f2: 2.25rem !default;
+$f3: 1.5rem !default;
+$f4: 1.25rem !default;
+$f5: 1rem !default;
+$f6: .875rem !default;
+$f7: .75rem !default;
+
+
+// Flags to toggle breakpoint-prefixed class generation per-component
+// This allows to build significantly smaller CSS
+$breakpoint-classes--type-scale: true !default;
+$breakpoint-classes--spacing: true !default;
+$breakpoint-classes--widths: true !default;
+$breakpoint-classes--max-widths: false !default;
