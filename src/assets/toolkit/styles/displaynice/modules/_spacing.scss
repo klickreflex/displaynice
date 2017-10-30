@@ -1,0 +1,467 @@
+// Custom Media Query Variables
+
+
+/* Variables */
+
+/*
+   SPACING
+   Docs: http://tachyons.io/docs/layout/spacing/
+
+   An eight step powers of two scale ranging from 0 to 16rem.
+
+   Base:
+     p = padding
+     m = margin
+
+   Modifiers:
+     a = all
+     h = horizontal
+     v = vertical
+     t = top
+     r = right
+     b = bottom
+     l = left
+
+     0 = none
+     1 = 1st step in spacing scale
+     2 = 2nd step in spacing scale
+     3 = 3rd step in spacing scale
+     4 = 4th step in spacing scale
+     5 = 5th step in spacing scale
+     6 = 6th step in spacing scale
+     7 = 7th step in spacing scale
+
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+
+*/
+
+
+.pa0 { padding: $spacing-none; }
+.pa1 { padding: $spacing-xs; }
+.pa2 { padding: $spacing-sm; }
+.pa3 { padding: $spacing-md; }
+.pa4 { padding: $spacing-lg; }
+.pa5 { padding: $spacing-xl; }
+.pa6 { padding: $spacing-xxl; }
+.pa7 { padding: $spacing-xxxl; }
+
+.pt0 { padding-top: $spacing-none; }
+.pt1 { padding-top: $spacing-xs; }
+.pt2 { padding-top: $spacing-sm; }
+.pt3 { padding-top: $spacing-md; }
+.pt4 { padding-top: $spacing-lg; }
+.pt5 { padding-top: $spacing-xl; }
+.pt6 { padding-top: $spacing-xxl; }
+.pt7 { padding-top: $spacing-xxxl; }
+
+.pr0 { padding-right: $spacing-none; }
+.pr1 { padding-right: $spacing-xs; }
+.pr2 { padding-right: $spacing-sm; }
+.pr3 { padding-right: $spacing-md; }
+.pr4 { padding-right: $spacing-lg; }
+.pr5 { padding-right: $spacing-xl; }
+.pr6 { padding-right: $spacing-xxl; }
+.pr7 { padding-right: $spacing-xxxl; }
+
+.pb0 { padding-bottom: $spacing-none; }
+.pb1 { padding-bottom: $spacing-xs; }
+.pb2 { padding-bottom: $spacing-sm; }
+.pb3 { padding-bottom: $spacing-md; }
+.pb4 { padding-bottom: $spacing-lg; }
+.pb5 { padding-bottom: $spacing-xl; }
+.pb6 { padding-bottom: $spacing-xxl; }
+.pb7 { padding-bottom: $spacing-xxxl; }
+
+.pl0 { padding-left: $spacing-none; }
+.pl1 { padding-left: $spacing-xs; }
+.pl2 { padding-left: $spacing-sm; }
+.pl3 { padding-left: $spacing-md; }
+.pl4 { padding-left: $spacing-lg; }
+.pl5 { padding-left: $spacing-xl; }
+.pl6 { padding-left: $spacing-xxl; }
+.pl7 { padding-left: $spacing-xxxl; }
+
+.pv0 {
+    padding-top: $spacing-none;
+    padding-bottom: $spacing-none;
+}
+
+.pv1 {
+    padding-top: $spacing-xs;
+    padding-bottom: $spacing-xs;
+}
+
+.pv2 {
+    padding-top: $spacing-sm;
+    padding-bottom: $spacing-sm;
+}
+
+.pv3 {
+    padding-top: $spacing-md;
+    padding-bottom: $spacing-md;
+}
+
+.pv4 {
+    padding-top: $spacing-lg;
+    padding-bottom: $spacing-lg;
+}
+
+.pv5 {
+    padding-top: $spacing-xl;
+    padding-bottom: $spacing-xl;
+}
+
+.pv6 {
+    padding-top: $spacing-xxl;
+    padding-bottom: $spacing-xxl;
+}
+
+.pv7 {
+    padding-top: $spacing-xxxl;
+    padding-bottom: $spacing-xxxl;
+}
+
+.ph0 {
+    padding-right: $spacing-none;
+    padding-left: $spacing-none;
+}
+
+.ph1 {
+    padding-right: $spacing-xs;
+    padding-left: $spacing-xs;
+}
+
+.ph2 {
+    padding-right: $spacing-sm;
+    padding-left: $spacing-sm;
+}
+
+.ph3 {
+    padding-right: $spacing-md;
+    padding-left: $spacing-md;
+}
+
+.ph4 {
+    padding-right: $spacing-lg;
+    padding-left: $spacing-lg;
+}
+
+.ph5 {
+    padding-right: $spacing-xl;
+    padding-left: $spacing-xl;
+}
+
+.ph6 {
+    padding-right: $spacing-xxl;
+    padding-left: $spacing-xxl;
+}
+
+.ph7 {
+    padding-right: $spacing-xxxl;
+    padding-left: $spacing-xxxl;
+}
+
+.ma0 { margin: $spacing-none; }
+.ma1 { margin: $spacing-xs; }
+.ma2 { margin: $spacing-sm; }
+.ma3 { margin: $spacing-md; }
+.ma4 { margin: $spacing-lg; }
+.ma5 { margin: $spacing-xl; }
+.ma6 { margin: $spacing-xxl; }
+.ma7 { margin: $spacing-xxxl; }
+
+.mt0 { margin-top: $spacing-none; }
+.mt1 { margin-top: $spacing-xs; }
+.mt2 { margin-top: $spacing-sm; }
+.mt3 { margin-top: $spacing-md; }
+.mt4 { margin-top: $spacing-lg; }
+.mt5 { margin-top: $spacing-xl; }
+.mt6 { margin-top: $spacing-xxl; }
+.mt7 { margin-top: $spacing-xxxl; }
+
+.mr0 { margin-right: $spacing-none; }
+.mr1 { margin-right: $spacing-xs; }
+.mr2 { margin-right: $spacing-sm; }
+.mr3 { margin-right: $spacing-md; }
+.mr4 { margin-right: $spacing-lg; }
+.mr5 { margin-right: $spacing-xl; }
+.mr6 { margin-right: $spacing-xxl; }
+.mr7 { margin-right: $spacing-xxxl; }
+
+.mb0 { margin-bottom: $spacing-none; }
+.mb1 { margin-bottom: $spacing-xs; }
+.mb2 { margin-bottom: $spacing-sm; }
+.mb3 { margin-bottom: $spacing-md; }
+.mb4 { margin-bottom: $spacing-lg; }
+.mb5 { margin-bottom: $spacing-xl; }
+.mb6 { margin-bottom: $spacing-xxl; }
+.mb7 { margin-bottom: $spacing-xxxl; }
+
+.ml0 { margin-left: $spacing-none; }
+.ml1 { margin-left: $spacing-xs; }
+.ml2 { margin-left: $spacing-sm; }
+.ml3 { margin-left: $spacing-md; }
+.ml4 { margin-left: $spacing-lg; }
+.ml5 { margin-left: $spacing-xl; }
+.ml6 { margin-left: $spacing-xxl; }
+.ml7 { margin-left: $spacing-xxxl; }
+
+.mv0 {
+    margin-top: $spacing-none;
+    margin-bottom: $spacing-none;
+}
+
+.mv1 {
+    margin-top: $spacing-xs;
+    margin-bottom: $spacing-xs;
+}
+
+.mv2 {
+    margin-top: $spacing-sm;
+    margin-bottom: $spacing-sm;
+}
+
+.mv3 {
+    margin-top: $spacing-md;
+    margin-bottom: $spacing-md;
+}
+
+.mv4 {
+    margin-top: $spacing-lg;
+    margin-bottom: $spacing-lg;
+}
+
+.mv5 {
+    margin-top: $spacing-xl;
+    margin-bottom: $spacing-xl;
+}
+
+.mv6 {
+    margin-top: $spacing-xxl;
+    margin-bottom: $spacing-xxl;
+}
+
+.mv7 {
+    margin-top: $spacing-xxxl;
+    margin-bottom: $spacing-xxxl;
+}
+
+.mh0 {
+    margin-right: $spacing-none;
+    margin-left: $spacing-none;
+}
+
+.mh1 {
+    margin-right: $spacing-xs;
+    margin-left: $spacing-xs;
+}
+
+.mh2 {
+    margin-right: $spacing-sm;
+    margin-left: $spacing-sm;
+}
+
+.mh3 {
+    margin-right: $spacing-md;
+    margin-left: $spacing-md;
+}
+
+.mh4 {
+    margin-right: $spacing-lg;
+    margin-left: $spacing-lg;
+}
+
+.mh5 {
+    margin-right: $spacing-xl;
+    margin-left: $spacing-xl;
+}
+
+.mh6 {
+    margin-right: $spacing-xxl;
+    margin-left: $spacing-xxl;
+}
+
+.mh7 {
+    margin-right: $spacing-xxxl;
+    margin-left: $spacing-xxxl;
+}
+
+
+
+// Loop over each breakpoint and generate according classes
+@each $breakpoint-name, $breakpoint-value in $utility-breakpoints {
+    @include mappy-bp($breakpoint-value) {
+        .pa0\@#{$breakpoint-name} { padding: $spacing-none; }
+        .pa1\@#{$breakpoint-name} { padding: $spacing-xs; }
+        .pa2\@#{$breakpoint-name} { padding: $spacing-sm; }
+        .pa3\@#{$breakpoint-name} { padding: $spacing-md; }
+        .pa4\@#{$breakpoint-name} { padding: $spacing-lg; }
+        .pa5\@#{$breakpoint-name} { padding: $spacing-xl; }
+        .pa6\@#{$breakpoint-name} { padding: $spacing-xxl; }
+        .pa7\@#{$breakpoint-name} { padding: $spacing-xxxl; }
+
+        .pt0\@#{$breakpoint-name} { padding-top: $spacing-none; }
+        .pt1\@#{$breakpoint-name} { padding-top: $spacing-xs; }
+        .pt2\@#{$breakpoint-name} { padding-top: $spacing-sm; }
+        .pt3\@#{$breakpoint-name} { padding-top: $spacing-md; }
+        .pt4\@#{$breakpoint-name} { padding-top: $spacing-lg; }
+        .pt5\@#{$breakpoint-name} { padding-top: $spacing-xl; }
+        .pt6\@#{$breakpoint-name} { padding-top: $spacing-xxl; }
+        .pt7\@#{$breakpoint-name} { padding-top: $spacing-xxxl; }
+
+        .pr0\@#{$breakpoint-name} { padding-right: $spacing-none; }
+        .pr1\@#{$breakpoint-name} { padding-right: $spacing-xs; }
+        .pr2\@#{$breakpoint-name} { padding-right: $spacing-sm; }
+        .pr3\@#{$breakpoint-name} { padding-right: $spacing-md; }
+        .pr4\@#{$breakpoint-name} { padding-right: $spacing-lg; }
+        .pr5\@#{$breakpoint-name} { padding-right: $spacing-xl; }
+        .pr6\@#{$breakpoint-name} { padding-right: $spacing-xxl; }
+        .pr7\@#{$breakpoint-name} { padding-right: $spacing-xxxl; }
+
+        .pb0\@#{$breakpoint-name} { padding-bottom: $spacing-none; }
+        .pb1\@#{$breakpoint-name} { padding-bottom: $spacing-xs; }
+        .pb2\@#{$breakpoint-name} { padding-bottom: $spacing-sm; }
+        .pb3\@#{$breakpoint-name} { padding-bottom: $spacing-md; }
+        .pb4\@#{$breakpoint-name} { padding-bottom: $spacing-lg; }
+        .pb5\@#{$breakpoint-name} { padding-bottom: $spacing-xl; }
+        .pb6\@#{$breakpoint-name} { padding-bottom: $spacing-xxl; }
+        .pb7\@#{$breakpoint-name} { padding-bottom: $spacing-xxxl; }
+
+        .pl0\@#{$breakpoint-name} { padding-left: $spacing-none; }
+        .pl1\@#{$breakpoint-name} { padding-left: $spacing-xs; }
+        .pl2\@#{$breakpoint-name} { padding-left: $spacing-sm; }
+        .pl3\@#{$breakpoint-name} { padding-left: $spacing-md; }
+        .pl4\@#{$breakpoint-name} { padding-left: $spacing-lg; }
+        .pl5\@#{$breakpoint-name} { padding-left: $spacing-xl; }
+        .pl6\@#{$breakpoint-name} { padding-left: $spacing-xxl; }
+        .pl7\@#{$breakpoint-name} { padding-left: $spacing-xxxl; }
+
+        .pv0\@#{$breakpoint-name} {
+            padding-top: $spacing-none;
+            padding-bottom: $spacing-none;
+        }
+
+        .pv1\@#{$breakpoint-name} {
+            padding-top: $spacing-xs;
+            padding-bottom: $spacing-xs;
+        }
+
+        .pv2\@#{$breakpoint-name} {
+            padding-top: $spacing-sm;
+            padding-bottom: $spacing-sm;
+        }
+
+        .pv3\@#{$breakpoint-name} {
+            padding-top: $spacing-md;
+            padding-bottom: $spacing-md;
+        }
+
+        .pv4\@#{$breakpoint-name} {
+            padding-top: $spacing-lg;
+            padding-bottom: $spacing-lg;
+        }
+
+        .pv5\@#{$breakpoint-name} {
+            padding-top: $spacing-xl;
+            padding-bottom: $spacing-xl;
+        }
+
+        .pv6\@#{$breakpoint-name} {
+            padding-top: $spacing-xxl;
+            padding-bottom: $spacing-xxl;
+        }
+
+        .pv7\@#{$breakpoint-name} {
+            padding-top: $spacing-xxxl;
+            padding-bottom: $spacing-xxxl;
+        }
+
+        .ph0\@#{$breakpoint-name} {
+            padding-right: $spacing-none;
+            padding-left: $spacing-none;
+        }
+
+        .ph1\@#{$breakpoint-name} {
+            padding-right: $spacing-xs;
+            padding-left: $spacing-xs;
+        }
+
+        .ph2\@#{$breakpoint-name} {
+            padding-right: $spacing-sm;
+            padding-left: $spacing-sm;
+        }
+
+        .ph3\@#{$breakpoint-name} {
+            padding-right: $spacing-md;
+            padding-left: $spacing-md;
+        }
+
+        .ph4\@#{$breakpoint-name} {
+            padding-right: $spacing-lg;
+            padding-left: $spacing-lg;
+        }
+
+        .ph5\@#{$breakpoint-name} {
+            padding-right: $spacing-xl;
+            padding-left: $spacing-xl;
+        }
+
+        .ph6\@#{$breakpoint-name} {
+            padding-right: $spacing-xxl;
+            padding-left: $spacing-xxl;
+        }
+
+        .ph7\@#{$breakpoint-name} {
+            padding-right: $spacing-xxxl;
+            padding-left: $spacing-xxxl;
+        }
+
+        .ma0\@#{$breakpoint-name} { margin: $spacing-none; }
+        .ma1\@#{$breakpoint-name} { margin: $spacing-xs; }
+        .ma2\@#{$breakpoint-name} { margin: $spacing-sm; }
+        .ma3\@#{$breakpoint-name} { margin: $spacing-md; }
+        .ma4\@#{$breakpoint-name} { margin: $spacing-lg; }
+        .ma5\@#{$breakpoint-name} { margin: $spacing-xl; }
+        .ma6\@#{$breakpoint-name} { margin: $spacing-xxl; }
+        .ma7\@#{$breakpoint-name} { margin: $spacing-xxxl; }
+
+        .mt0\@#{$breakpoint-name} { margin-top: $spacing-none; }
+        .mt1\@#{$breakpoint-name} { margin-top: $spacing-xs; }
+        .mt2\@#{$breakpoint-name} { margin-top: $spacing-sm; }
+        .mt3\@#{$breakpoint-name} { margin-top: $spacing-md; }
+        .mt4\@#{$breakpoint-name} { margin-top: $spacing-lg; }
+        .mt5\@#{$breakpoint-name} { margin-top: $spacing-xl; }
+        .mt6\@#{$breakpoint-name} { margin-top: $spacing-xxl; }
+        .mt7\@#{$breakpoint-name} { margin-top: $spacing-xxxl; }
+
+        .mr0\@#{$breakpoint-name} { margin-right: $spacing-none; }
+        .mr1\@#{$breakpoint-name} { margin-right: $spacing-xs; }
+        .mr2\@#{$breakpoint-name} { margin-right: $spacing-sm; }
+        .mr3\@#{$breakpoint-name} { margin-right: $spacing-md; }
+        .mr4\@#{$breakpoint-name} { margin-right: $spacing-lg; }
+        .mr5\@#{$breakpoint-name} { margin-right: $spacing-xl; }
+        .mr6\@#{$breakpoint-name} { margin-right: $spacing-xxl; }
+        .mr7\@#{$breakpoint-name} { margin-right: $spacing-xxxl; }
+
+        .mb0\@#{$breakpoint-name} { margin-bottom: $spacing-none; }
+        .mb1\@#{$breakpoint-name} { margin-bottom: $spacing-xs; }
+        .mb2\@#{$breakpoint-name} { margin-bottom: $spacing-sm; }
+        .mb3\@#{$breakpoint-name} { margin-bottom: $spacing-md; }
+        .mb4\@#{$breakpoint-name} { margin-bottom: $spacing-lg; }
+        .mb5\@#{$breakpoint-name} { margin-bottom: $spacing-xl; }
+        .mb6\@#{$breakpoint-name} { margin-bottom: $spacing-xxl; }
+        .mb7\@#{$breakpoint-name} { margin-bottom: $spacing-xxxl; }
+
+        .ml0\@#{$breakpoint-name} { margin-left: $spacing-none; }
+        .ml1\@#{$breakpoint-name} { margin-left: $spacing-xs; }
+        .ml2\@#{$breakpoint-name} { margin-left: $spacing-sm; }
+        .ml3\@#{$breakpoint-name} { margin-left: $spacing-md; }
+        .ml4\@#{$breakpoint-name} { margin-left: $spacing-lg; }
+        .ml5\@#{$breakpoint-name} { margin-left: $spacing-xl; }
+        .ml6\@#{$breakpoint-name} { margin-left: $spacing-xxl; }
+        .ml7\@#{$breakpoint-name} { margin-left: $spacing-xxxl; }
+    }
+}

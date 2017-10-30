@@ -1,0 +1,206 @@
+
+// Converted Variables
+
+
+// Custom Media Query Variables
+
+
+/*
+   NEGATIVE MARGINS
+
+   Base:
+     n = negative
+
+   Modifiers:
+     a = all
+     t = top
+     r = right
+     b = bottom
+     l = left
+
+     1 = 1st step in spacing scale
+     2 = 2nd step in spacing scale
+     3 = 3rd step in spacing scale
+     4 = 4th step in spacing scale
+     5 = 5th step in spacing scale
+     6 = 6th step in spacing scale
+     7 = 7th step in spacing scale
+
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+
+*/
+
+
+
+.na1 { margin: -$spacing-xs; }
+.na2 { margin: -$spacing-sm; }
+.na3 { margin: -$spacing-md; }
+.na4 { margin: -$spacing-lg; }
+.na5 { margin: -$spacing-xl; }
+.na6 { margin: -$spacing-xxl; }
+.na7 { margin: -$spacing-xxxl; }
+
+.nl1 { margin-left: -$spacing-xs; }
+.nl2 { margin-left: -$spacing-sm; }
+.nl3 { margin-left: -$spacing-md; }
+.nl4 { margin-left: -$spacing-lg; }
+.nl5 { margin-left: -$spacing-xl; }
+.nl6 { margin-left: -$spacing-xxl; }
+.nl7 { margin-left: -$spacing-xxxl; }
+
+.nr1 { margin-right: -$spacing-xs; }
+.nr2 { margin-right: -$spacing-sm; }
+.nr3 { margin-right: -$spacing-md; }
+.nr4 { margin-right: -$spacing-lg; }
+.nr5 { margin-right: -$spacing-xl; }
+.nr6 { margin-right: -$spacing-xxl; }
+.nr7 { margin-right: -$spacing-xxxl; }
+
+.nb1 { margin-bottom: -$spacing-xs; }
+.nb2 { margin-bottom: -$spacing-sm; }
+.nb3 { margin-bottom: -$spacing-md; }
+.nb4 { margin-bottom: -$spacing-lg; }
+.nb5 { margin-bottom: -$spacing-xl; }
+.nb6 { margin-bottom: -$spacing-xxl; }
+.nb7 { margin-bottom: -$spacing-xxxl; }
+
+.nt1 { margin-top: -$spacing-xs; }
+.nt2 { margin-top: -$spacing-sm; }
+.nt3 { margin-top: -$spacing-md; }
+.nt4 { margin-top: -$spacing-lg; }
+.nt5 { margin-top: -$spacing-xl; }
+.nt6 { margin-top: -$spacing-xxl; }
+.nt7 { margin-top: -$spacing-xxxl; }
+
+@media #{$breakpoint-not-small} {
+
+  .na1-ns { margin: -$spacing-xs; }
+  .na2-ns { margin: -$spacing-sm; }
+  .na3-ns { margin: -$spacing-md; }
+  .na4-ns { margin: -$spacing-lg; }
+  .na5-ns { margin: -$spacing-xl; }
+  .na6-ns { margin: -$spacing-xxl; }
+  .na7-ns { margin: -$spacing-xxxl; }
+
+  .nl1-ns { margin-left: -$spacing-xs; }
+  .nl2-ns { margin-left: -$spacing-sm; }
+  .nl3-ns { margin-left: -$spacing-md; }
+  .nl4-ns { margin-left: -$spacing-lg; }
+  .nl5-ns { margin-left: -$spacing-xl; }
+  .nl6-ns { margin-left: -$spacing-xxl; }
+  .nl7-ns { margin-left: -$spacing-xxxl; }
+
+  .nr1-ns { margin-right: -$spacing-xs; }
+  .nr2-ns { margin-right: -$spacing-sm; }
+  .nr3-ns { margin-right: -$spacing-md; }
+  .nr4-ns { margin-right: -$spacing-lg; }
+  .nr5-ns { margin-right: -$spacing-xl; }
+  .nr6-ns { margin-right: -$spacing-xxl; }
+  .nr7-ns { margin-right: -$spacing-xxxl; }
+
+  .nb1-ns { margin-bottom: -$spacing-xs; }
+  .nb2-ns { margin-bottom: -$spacing-sm; }
+  .nb3-ns { margin-bottom: -$spacing-md; }
+  .nb4-ns { margin-bottom: -$spacing-lg; }
+  .nb5-ns { margin-bottom: -$spacing-xl; }
+  .nb6-ns { margin-bottom: -$spacing-xxl; }
+  .nb7-ns { margin-bottom: -$spacing-xxxl; }
+
+  .nt1-ns { margin-top: -$spacing-xs; }
+  .nt2-ns { margin-top: -$spacing-sm; }
+  .nt3-ns { margin-top: -$spacing-md; }
+  .nt4-ns { margin-top: -$spacing-lg; }
+  .nt5-ns { margin-top: -$spacing-xl; }
+  .nt6-ns { margin-top: -$spacing-xxl; }
+  .nt7-ns { margin-top: -$spacing-xxxl; }
+
+}
+
+@media #{$breakpoint-medium} {
+  .na1-m { margin: -$spacing-xs; }
+  .na2-m { margin: -$spacing-sm; }
+  .na3-m { margin: -$spacing-md; }
+  .na4-m { margin: -$spacing-lg; }
+  .na5-m { margin: -$spacing-xl; }
+  .na6-m { margin: -$spacing-xxl; }
+  .na7-m { margin: -$spacing-xxxl; }
+
+  .nl1-m { margin-left: -$spacing-xs; }
+  .nl2-m { margin-left: -$spacing-sm; }
+  .nl3-m { margin-left: -$spacing-md; }
+  .nl4-m { margin-left: -$spacing-lg; }
+  .nl5-m { margin-left: -$spacing-xl; }
+  .nl6-m { margin-left: -$spacing-xxl; }
+  .nl7-m { margin-left: -$spacing-xxxl; }
+
+  .nr1-m { margin-right: -$spacing-xs; }
+  .nr2-m { margin-right: -$spacing-sm; }
+  .nr3-m { margin-right: -$spacing-md; }
+  .nr4-m { margin-right: -$spacing-lg; }
+  .nr5-m { margin-right: -$spacing-xl; }
+  .nr6-m { margin-right: -$spacing-xxl; }
+  .nr7-m { margin-right: -$spacing-xxxl; }
+
+  .nb1-m { margin-bottom: -$spacing-xs; }
+  .nb2-m { margin-bottom: -$spacing-sm; }
+  .nb3-m { margin-bottom: -$spacing-md; }
+  .nb4-m { margin-bottom: -$spacing-lg; }
+  .nb5-m { margin-bottom: -$spacing-xl; }
+  .nb6-m { margin-bottom: -$spacing-xxl; }
+  .nb7-m { margin-bottom: -$spacing-xxxl; }
+
+  .nt1-m { margin-top: -$spacing-xs; }
+  .nt2-m { margin-top: -$spacing-sm; }
+  .nt3-m { margin-top: -$spacing-md; }
+  .nt4-m { margin-top: -$spacing-lg; }
+  .nt5-m { margin-top: -$spacing-xl; }
+  .nt6-m { margin-top: -$spacing-xxl; }
+  .nt7-m { margin-top: -$spacing-xxxl; }
+
+}
+
+@media #{$breakpoint-large} {
+  .na1-l { margin: -$spacing-xs; }
+  .na2-l { margin: -$spacing-sm; }
+  .na3-l { margin: -$spacing-md; }
+  .na4-l { margin: -$spacing-lg; }
+  .na5-l { margin: -$spacing-xl; }
+  .na6-l { margin: -$spacing-xxl; }
+  .na7-l { margin: -$spacing-xxxl; }
+
+  .nl1-l { margin-left: -$spacing-xs; }
+  .nl2-l { margin-left: -$spacing-sm; }
+  .nl3-l { margin-left: -$spacing-md; }
+  .nl4-l { margin-left: -$spacing-lg; }
+  .nl5-l { margin-left: -$spacing-xl; }
+  .nl6-l { margin-left: -$spacing-xxl; }
+  .nl7-l { margin-left: -$spacing-xxxl; }
+
+  .nr1-l { margin-right: -$spacing-xs; }
+  .nr2-l { margin-right: -$spacing-sm; }
+  .nr3-l { margin-right: -$spacing-md; }
+  .nr4-l { margin-right: -$spacing-lg; }
+  .nr5-l { margin-right: -$spacing-xl; }
+  .nr6-l { margin-right: -$spacing-xxl; }
+  .nr7-l { margin-right: -$spacing-xxxl; }
+
+  .nb1-l { margin-bottom: -$spacing-xs; }
+  .nb2-l { margin-bottom: -$spacing-sm; }
+  .nb3-l { margin-bottom: -$spacing-md; }
+  .nb4-l { margin-bottom: -$spacing-lg; }
+  .nb5-l { margin-bottom: -$spacing-xl; }
+  .nb6-l { margin-bottom: -$spacing-xxl; }
+  .nb7-l { margin-bottom: -$spacing-xxxl; }
+
+  .nt1-l { margin-top: -$spacing-xs; }
+  .nt2-l { margin-top: -$spacing-sm; }
+  .nt3-l { margin-top: -$spacing-md; }
+  .nt4-l { margin-top: -$spacing-lg; }
+  .nt5-l { margin-top: -$spacing-xl; }
+  .nt6-l { margin-top: -$spacing-xxl; }
+  .nt7-l { margin-top: -$spacing-xxxl; }
+}
+

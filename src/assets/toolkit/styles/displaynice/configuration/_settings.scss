@@ -1,0 +1,26 @@
+// Spacing
+$spacing-none:  0 !default;
+$spacing-xs:    .25rem !default;
+$spacing-sm:    .5rem !default;
+$spacing-md:    1rem !default;
+$spacing-lg:    2rem !default;
+$spacing-xl:    4rem !default;
+$spacing-xxl:   8rem !default;
+$spacing-xxxl:  16rem !default;
+
+
+// Breakpoints availble for the mappy-bp mixin
+$breakpoints: (
+    'xs': 320px,   // 20em
+    'sm': 480px,   // 30em
+    'md': 768px,   // 48em
+    'lg': 1024px,  // 64em
+    'xl': 1200px   // 75em
+) !default;
+
+// Breakpoints used for utility class generation
+$utility-breakpoints: (
+    'sm': 480px,   // 30em
+    'md': 768px,   // 48em
+    'lg': 1024px,  // 64em
+) !default;

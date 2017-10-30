@@ -1,37 +1,14 @@
-[![GitHub release](https://img.shields.io/github/release/fbrctr/fabricator.svg)]()
-[![Build Status](https://travis-ci.org/fbrctr/fabricator.svg)](https://travis-ci.org/fbrctr/fabricator) [![devDependency Status](https://david-dm.org/fbrctr/fabricator/dev-status.svg)](https://david-dm.org/fbrctr/fabricator#info=devDependencies) [![Join the chat at https://gitter.im/fbrctr/fabricator](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/fbrctr/fabricator?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+# display {nice}
+## CSS Utility Class Mashup
 
-<p align="center">
-  <img src="http://fbrctr.github.io/assets/toolkit/images/logo.svg" width="500">
-</p>
+Taking the parts I liked most in [Tachyons](http://tachyons.io/), [Shed CSS](http://tedconf.github.io/shed-css/) and [Beard](http://buildwithbeard.com/) and mashing up my own set of utility classes.
 
-# Fabricator
+Under active development, please don't use anything and rely on it, it can and it will break.
 
-> _fabricate_ - to make by assembling parts or sections.
-
-Fabricator is a tool for building website UI toolkits - _think ["Tiny Bootstraps, for Every Client"](http://daverupert.com/2013/04/responsive-deliverables/#tiny-bootstraps-for-every-client)_
-
-## Quick Start
-
-```shell
-$ curl -L https://github.com/fbrctr/fabricator/archive/master.tar.gz | tar zx --strip 1
-$ npm start
-```
-
-## Documentation
-
-#### [Read the docs →](http://fbrctr.github.io/docs)
-
-## Demo
-
-#### [Default Fabricator Instance →](http://fbrctr.github.io/demo)
-
-## Credits
-
-Created by [Luke Askew](http://twitter.com/lukeaskew).
-
-Logo by [Abby Putinski](https://abbyputinski.com/)
-
-## License
-
-[The MIT License (MIT)](http://opensource.org/licenses/mit-license.php)
+## Ideas
+- I love the general concept of Tachyons' feature set and the overall naming conventions, but I miss easy ways to extend the core features
+- I like Beard's easy extendability, especially when it comes to custom breakpoints, but I'm not too fond of class names and breakpoint prefixes
+- I prefer Shed's method to trigger responsive states using the _at-syntax_ (`@xxl`)
+- I need an easy way to change and add new breakpoints
+- I need to be able to drop the framework into existing Sass projects
+- I want to use [Mappy Breakpoints](https://github.com/zellwk/mappy-breakpoints) to manage and apply breakpoints
