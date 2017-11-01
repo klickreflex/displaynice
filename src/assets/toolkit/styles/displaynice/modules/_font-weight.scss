@@ -1,10 +1,3 @@
-
-// Converted Variables
-
-
-// Custom Media Query Variables
-
-
 /*
 
    FONT WEIGHT
@@ -43,45 +36,20 @@
 .fw8    { font-weight: 800; }
 .fw9    { font-weight: 900; }
 
-
-@media #{$breakpoint-not-small} {
-  .normal-ns { font-weight: normal; }
-  .b-ns      { font-weight: bold; }
-  .fw1-ns    { font-weight: 100; }
-  .fw2-ns    { font-weight: 200; }
-  .fw3-ns    { font-weight: 300; }
-  .fw4-ns    { font-weight: 400; }
-  .fw5-ns    { font-weight: 500; }
-  .fw6-ns    { font-weight: 600; }
-  .fw7-ns    { font-weight: 700; }
-  .fw8-ns    { font-weight: 800; }
-  .fw9-ns    { font-weight: 900; }
-}
-
-@media #{$breakpoint-medium} {
-  .normal-m { font-weight: normal; }
-  .b-m      { font-weight: bold; }
-  .fw1-m    { font-weight: 100; }
-  .fw2-m    { font-weight: 200; }
-  .fw3-m    { font-weight: 300; }
-  .fw4-m    { font-weight: 400; }
-  .fw5-m    { font-weight: 500; }
-  .fw6-m    { font-weight: 600; }
-  .fw7-m    { font-weight: 700; }
-  .fw8-m    { font-weight: 800; }
-  .fw9-m    { font-weight: 900; }
-}
-
-@media #{$breakpoint-large} {
-  .normal-l { font-weight: normal; }
-  .b-l      { font-weight: bold; }
-  .fw1-l    { font-weight: 100; }
-  .fw2-l    { font-weight: 200; }
-  .fw3-l    { font-weight: 300; }
-  .fw4-l    { font-weight: 400; }
-  .fw5-l    { font-weight: 500; }
-  .fw6-l    { font-weight: 600; }
-  .fw7-l    { font-weight: 700; }
-  .fw8-l    { font-weight: 800; }
-  .fw9-l    { font-weight: 900; }
+@if ($breakpoint-classes--font-weight) {
+    @each $breakpoint-name, $breakpoint-value in $utility-breakpoints {
+        @include mappy-bp($breakpoint-value) {
+            .normal\@#{$breakpoint-name} { font-weight: normal; }
+            .b\@#{$breakpoint-name}      { font-weight: bold; }
+            .fw1\@#{$breakpoint-name}    { font-weight: 100; }
+            .fw2\@#{$breakpoint-name}    { font-weight: 200; }
+            .fw3\@#{$breakpoint-name}    { font-weight: 300; }
+            .fw4\@#{$breakpoint-name}    { font-weight: 400; }
+            .fw5\@#{$breakpoint-name}    { font-weight: 500; }
+            .fw6\@#{$breakpoint-name}    { font-weight: 600; }
+            .fw7\@#{$breakpoint-name}    { font-weight: 700; }
+            .fw8\@#{$breakpoint-name}    { font-weight: 800; }
+            .fw9\@#{$breakpoint-name}    { font-weight: 900; }
+        }
+    }
 }
