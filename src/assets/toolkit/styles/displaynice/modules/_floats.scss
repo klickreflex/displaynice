@@ -33,14 +33,36 @@
 
 
 
-.fl { float: left;  _display: inline; }
-.fr { float: right; _display: inline; }
-.fn { float: none; }
+.fl {
+    float: left;
+    _display: inline;
+}
 
-@each $breakpoint-name, $breakpoint-value in $utility-breakpoints {
-  @include mappy-bp($breakpoint-value) {
-    .fl\@#{$breakpoint-name} { float: left;  _display: inline; }
-    .fr\@#{$breakpoint-name} { float: right; _display: inline; }
-    .fn\@#{$breakpoint-name} { float: none; }
-  }
+.fr {
+    float: right;
+    _display: inline;
+}
+
+.fn {
+    float: none;
+}
+
+@if ($breakpoint-classes--floats) {
+    @each $breakpoint-name, $breakpoint-value in $utility-breakpoints {
+        @include mappy-bp($breakpoint-value) {
+            .fl\@#{$breakpoint-name} {
+                float: left;
+                _display: inline;
+            }
+
+            .fr\@#{$breakpoint-name} {
+                float: right;
+                _display: inline;
+            }
+
+            .fn\@#{$breakpoint-name} {
+                float: none;
+            }
+        }
+    }
 }

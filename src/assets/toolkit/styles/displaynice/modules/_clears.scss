@@ -15,9 +15,13 @@
 /* Nicolas Gallaghers Clearfix solution
    Ref: http://nicolasgallagher.com/micro-clearfix-hack/ */
 
-.cf:before,
-.cf:after { content: " "; display: table; }
-.cf:after { clear: both; }
+.cf::before,
+.cf::after {
+    display: table;
+    content: '';
+}
+
+.cf::after { clear: both; }
 .cf {       *zoom: 1; }
 
 .cl { clear: left; }
@@ -25,23 +29,14 @@
 .cb { clear: both; }
 .cn { clear: none; }
 
-@media #{$breakpoint-not-small} {
-  .cl-ns { clear: left; }
-  .cr-ns { clear: right; }
-  .cb-ns { clear: both; }
-  .cn-ns { clear: none; }
-}
-
-@media #{$breakpoint-medium} {
-  .cl-m { clear: left; }
-  .cr-m { clear: right; }
-  .cb-m { clear: both; }
-  .cn-m { clear: none; }
-}
-
-@media #{$breakpoint-large} {
-  .cl-l { clear: left; }
-  .cr-l { clear: right; }
-  .cb-l { clear: both; }
-  .cn-l { clear: none; }
+@if ($breakpoint-classes--clears) {
+    // Loop over each breakpoint and generate according classes
+    @each $breakpoint-name, $breakpoint-value in $utility-breakpoints {
+        @include mappy-bp($breakpoint-value) {
+            .cl\@#{$breakpoint-name} { clear: left; }
+            .cr\@#{$breakpoint-name} { clear: right; }
+            .cb\@#{$breakpoint-name} { clear: both; }
+            .cn\@#{$breakpoint-name} { clear: none; }
+        }
+    }
 }

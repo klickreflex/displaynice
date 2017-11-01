@@ -12,3 +12,13 @@ Under active development, please don't use anything and rely on it, it can and i
 - I need an easy way to change and add new breakpoints
 - I need to be able to drop the framework into existing Sass projects
 - I want to use [Mappy Breakpoints](https://github.com/zellwk/mappy-breakpoints) to manage and apply breakpoints
+
+## Roadmap
+[x] Use a global Sass map for all breakpoints
+[_] Replace hard-coded breakpoint classes with dynamicly generated ones
+[_] Adapt @-syntax for breakpoint classes (eG `.foo@xl`)
+[_] Make all values customizable by variables that can easily be overridden
+[_] Make breakpoint classes optional on a per-utility basis
+[_] Refactor class names for clearer distinction between properties and values
+[_] Separate the Sass library from the demo content and make it easily usable in any project
+[_] Proper documentation

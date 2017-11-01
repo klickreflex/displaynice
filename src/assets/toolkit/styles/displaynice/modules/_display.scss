@@ -1,10 +1,3 @@
-
-// Converted Variables
-
-
-// Custom Media Query Variables
-
-
 /*
 
    DISPLAY
@@ -48,64 +41,30 @@
   all cells will be equal width
 */
 .dt--fixed {
-  table-layout: fixed;
-  width: 100%;
-}
-
-@media #{$breakpoint-not-small} {
-  .dn-ns {              display: none; }
-  .di-ns {              display: inline; }
-  .db-ns {              display: block; }
-  .dib-ns {             display: inline-block; }
-  .dit-ns {             display: inline-table; }
-  .dt-ns {              display: table; }
-  .dtc-ns {             display: table-cell; }
-  .dt-row-ns {          display: table-row; }
-  .dt-row-group-ns {    display: table-row-group; }
-  .dt-column-ns {       display: table-column; }
-  .dt-column-group-ns { display: table-column-group; }
-
-  .dt--fixed-ns {
-    table-layout: fixed;
     width: 100%;
-  }
-}
-
-@media #{$breakpoint-medium} {
-  .dn-m {              display: none; }
-  .di-m {              display: inline; }
-  .db-m {              display: block; }
-  .dib-m {             display: inline-block; }
-  .dit-m {             display: inline-table; }
-  .dt-m {              display: table; }
-  .dtc-m {             display: table-cell; }
-  .dt-row-m {          display: table-row; }
-  .dt-row-group-m {    display: table-row-group; }
-  .dt-column-m {       display: table-column; }
-  .dt-column-group-m { display: table-column-group; }
-
-  .dt--fixed-m {
     table-layout: fixed;
-    width: 100%;
-  }
 }
 
-@media #{$breakpoint-large} {
-  .dn-l {              display: none; }
-  .di-l {              display: inline; }
-  .db-l {              display: block; }
-  .dib-l {             display: inline-block; }
-  .dit-l {             display: inline-table; }
-  .dt-l {              display: table; }
-  .dtc-l {             display: table-cell; }
-  .dt-row-l {          display: table-row; }
-  .dt-row-group-l {    display: table-row-group; }
-  .dt-column-l {       display: table-column; }
-  .dt-column-group-l { display: table-column-group; }
+@if ($breakpoint-classes--display) {
+    // Loop over each breakpoint and generate according classes
+    @each $breakpoint-name, $breakpoint-value in $utility-breakpoints {
+        @include mappy-bp($breakpoint-value) {
+            .dn\@#{$breakpoint-name} {              display: none; }
+            .di\@#{$breakpoint-name} {              display: inline; }
+            .db\@#{$breakpoint-name} {              display: block; }
+            .dib\@#{$breakpoint-name} {             display: inline-block; }
+            .dit\@#{$breakpoint-name} {             display: inline-table; }
+            .dt\@#{$breakpoint-name} {              display: table; }
+            .dtc\@#{$breakpoint-name} {             display: table-cell; }
+            .dt-row\@#{$breakpoint-name} {          display: table-row; }
+            .dt-row-group\@#{$breakpoint-name} {    display: table-row-group; }
+            .dt-column\@#{$breakpoint-name} {       display: table-column; }
+            .dt-column-group\@#{$breakpoint-name} { display: table-column-group; }
 
-  .dt--fixed-l {
-    table-layout: fixed;
-    width: 100%;
-  }
+            .dt--fixed\@#{$breakpoint-name} {
+                width: 100%;
+                table-layout: fixed;
+            }
+        }
+    }
 }
-

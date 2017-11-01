@@ -1,10 +1,3 @@
-
-// Converted Variables
-
-
-// Custom Media Query Variables
-
-
 /*
 
    BACKGROUND SIZE
@@ -22,20 +15,15 @@
   on an html element.
 */
 
-  .cover { background-size: cover!important; }
-  .contain { background-size: contain!important; }
+.cover { background-size: cover !important; }
+.contain { background-size: contain !important; }
 
-@media #{$breakpoint-not-small} {
-  .cover-ns { background-size: cover!important; }
-  .contain-ns { background-size: contain!important; }
-}
-
-@media #{$breakpoint-medium} {
-  .cover-m { background-size: cover!important; }
-  .contain-m { background-size: contain!important; }
-}
-
-@media #{$breakpoint-large} {
-  .cover-l { background-size: cover!important; }
-  .contain-l { background-size: contain!important; }
+@if ($breakpoint-classes--background-size) {
+    // Loop over each breakpoint and generate according classes
+    @each $breakpoint-name, $breakpoint-value in $utility-breakpoints {
+        @include mappy-bp($breakpoint-value) {
+            .cover\@#{$breakpoint-name} { background-size: cover !important; }
+            .contain\@#{$breakpoint-name} { background-size: contain !important; }
+        }
+      }
 }

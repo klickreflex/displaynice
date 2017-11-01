@@ -23,7 +23,7 @@ $breakpoints: (
 $utility-breakpoints: (
     'sm': 480px,   // 30em
     'md': 768px,   // 48em
-    'lg': 1024px,  // 64em
+    'lg': 1024px   // 64em
 ) !default;
 
 
@@ -41,8 +41,20 @@ $f7: .75rem !default;
 
 // Flags to toggle breakpoint-prefixed class generation per-component
 // This allows to build significantly smaller CSS
-$breakpoint-classes--type-scale: true !default;
-$breakpoint-classes--spacing: true !default;
-$breakpoint-classes--widths: true !default;
-$breakpoint-classes--max-widths: false !default;
-$breakpoint-classes--heights: true !default;
+$breakpoint-classes--type-scale:          true !default;
+$breakpoint-classes--spacing:             true !default;
+$breakpoint-classes--widths:              true !default;
+$breakpoint-classes--max-widths:          false !default;
+$breakpoint-classes--heights:             true !default;
+$breakpoint-classes--aspect-ratio:        true !default;
+$breakpoint-classes--background-position: true !default;
+$breakpoint-classes--border-radius:       true !default;
+$breakpoint-classes--border-style:        true !default;
+$breakpoint-classes--background-size:     true !default;
+$breakpoint-classes--borders:             true !default;
+$breakpoint-classes--box-shadow:          true !default;
+$breakpoint-classes--clears:              true !default;
+$breakpoint-classes--coordinates:         true !default;
+$breakpoint-classes--display:             true !default;
+$breakpoint-classes--flexbox:             true !default;
+$breakpoint-classes--floats:              true !default;
