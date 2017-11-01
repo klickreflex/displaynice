@@ -68,23 +68,23 @@
     // Loop over each breakpoint and generate according classes
     @each $breakpoint-name, $breakpoint-value in $utility-breakpoints {
         @include mappy-bp($breakpoint-value) {
-          .h1\@#{$breakpoint-name} {  height: 1rem; }
-          .h2\@#{$breakpoint-name} {  height: 2rem; }
-          .h3\@#{$breakpoint-name} {  height: 4rem; }
-          .h4\@#{$breakpoint-name} {  height: 8rem; }
-          .h5\@#{$breakpoint-name} {  height: 16rem; }
-          .h-25\@#{$breakpoint-name} { height: 25%; }
-          .h-50\@#{$breakpoint-name} { height: 50%; }
-          .h-75\@#{$breakpoint-name} { height: 75%; }
-          .h-100\@#{$breakpoint-name} { height: 100%; }
-          .min-h-100\@#{$breakpoint-name} { min-height: 100%; }
-          .vh-25\@#{$breakpoint-name} {  height:  25vh; }
-          .vh-50\@#{$breakpoint-name} {  height:  50vh; }
-          .vh-75\@#{$breakpoint-name} {  height:  75vh; }
-          .vh-100\@#{$breakpoint-name} { height: 100vh; }
-          .min-vh-100\@#{$breakpoint-name} { min-height: 100vh; }
-          .h-auto\@#{$breakpoint-name} { height: auto; }
-          .h-inherit\@#{$breakpoint-name} { height: inherit; }
+            .h1\@#{$breakpoint-name}         { height: 1rem; }
+            .h2\@#{$breakpoint-name}         { height: 2rem; }
+            .h3\@#{$breakpoint-name}         { height: 4rem; }
+            .h4\@#{$breakpoint-name}         { height: 8rem; }
+            .h5\@#{$breakpoint-name}         { height: 16rem; }
+            .h-25\@#{$breakpoint-name}       { height: 25%; }
+            .h-50\@#{$breakpoint-name}       { height: 50%; }
+            .h-75\@#{$breakpoint-name}       { height: 75%; }
+            .h-100\@#{$breakpoint-name}      { height: 100%; }
+            .min-h-100\@#{$breakpoint-name}  { min-height: 100%; }
+            .vh-25\@#{$breakpoint-name}      { height: 25vh; }
+            .vh-50\@#{$breakpoint-name}      { height: 50vh; }
+            .vh-75\@#{$breakpoint-name}      { height: 75vh; }
+            .vh-100\@#{$breakpoint-name}     { height: 100vh; }
+            .min-vh-100\@#{$breakpoint-name} { min-height: 100vh; }
+            .h-auto\@#{$breakpoint-name}     { height: auto; }
+            .h-inherit\@#{$breakpoint-name}  { height: inherit; }
         }
     }
 }
