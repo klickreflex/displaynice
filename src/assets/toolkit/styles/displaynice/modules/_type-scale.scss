@@ -39,6 +39,7 @@
 .f-headline {
     font-size: $f-headline;
 }
+
 .f-5,
 .f-subheadline {
     font-size: $f-subheadline;
@@ -66,7 +67,7 @@
 
             .f-5\@#{$breakpoint-name},
             .f-subheadline\@#{$breakpoint-name} {
-            font-size: $f-subheadline;
+                font-size: $f-subheadline;
             }
 
             .f1\@#{$breakpoint-name} { font-size: $f1; }
@@ -78,5 +79,4 @@
             .f7\@#{$breakpoint-name} { font-size: $f7; }
         }
     }
-
 }
