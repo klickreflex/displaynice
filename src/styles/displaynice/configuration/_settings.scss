@@ -8,6 +8,17 @@ $spacing-xl:    4rem !default;
 $spacing-xxl:   8rem !default;
 $spacing-xxxl:  16rem !default;
 
+$spacing: (
+    '0': 0,
+    '1': .25rem,
+    '2': .5rem,
+    '3': .75rem,
+    '4': 1rem,
+    '6': 2rem,
+    '8': 4rem,
+    '16': 8rem
+
+) !default;
 
 // Breakpoints availble for the mappy-bp mixin
 $breakpoints: (
@@ -20,6 +31,8 @@ $breakpoints: (
 
 
 // Breakpoints used for utility class generation
+// The global $breakpoints map could be used as well, but this allows adding
+// more custom breakpoints without blowing up the rendered CSS unnecessarily
 $utility-breakpoints: (
     'sm': 480px,   // 30em
     'md': 768px,   // 48em

@@ -14,7 +14,7 @@ Under active development, please don't use anything and rely on it, it can and i
 - I want to use [Mappy Breakpoints](https://github.com/zellwk/mappy-breakpoints) to manage and apply breakpoints
 
 ## Roadmap
-- [x] Use a global Sass map for all breakpoints
+- [ ] Use a global Sass map for all breakpoints
 - [ ] Replace hard-coded breakpoint classes with dynamicly generated ones
 - [ ] Adapt @-syntax for breakpoint classes (eG `.foo@xl`)
 - [ ] Make all values customizable by variables that can easily be overridden

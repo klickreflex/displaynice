@@ -1,0 +1,5 @@
+@import 'displaynice/displaynice';
+
+.foobar {
+    margin: map-get($spacing, '2' );
+}
